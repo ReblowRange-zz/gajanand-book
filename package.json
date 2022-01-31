@@ -1,10 +1,12 @@
 {
-  "name": "gaja",
-  "version": "0.0.0",
+  "name": "gajanand-book",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:github": "ng build  --base-href https://reblowrange.github.io/gajanand-book/",
+    "publish": "npm run build:github && ngh --dir dist/gajanand-book",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
