@@ -1,3 +1,8 @@
+export const INSTAGRAM_URL = 'https://www.instagram.com/gajanand_book_official/';
+export const TELEGRAM_URL = 'https://t.me/Gajanandbook_Group';
+export const ID_WHATSAPP = '7733004495';
+export const HELP_WHATSAPP = '7733004459';
+
 export const demoAccountData = [
     {
         name: "BestBook 9",

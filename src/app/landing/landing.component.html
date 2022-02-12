@@ -1,31 +1,39 @@
-
-<section class="text-gray-600 body-font">
-    <div
-      class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-    >
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-        <img
-          class="object-cover object-center rounded"
-          alt="hero"
-          src="https://dummyimage.com/720x600"
-        />
-      </div>
-      <div
-        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+<section class="text-gray-600 body-font bg-yellow-400">
+  <div
+    class="container mx-auto flex px-5 py-14 md:flex-row flex-col items-center"
+  >
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <carousel
+        style="z-index: inherit;"
+        class="carosal-css"
+        [images]="images"
+        [cellsToShow]="1"
+        [loop]="true"
+        [autoplay]="autoplay"
+        [autoplayInterval]="3000"
+        [arrows]="false"
+        [transitionTimingFunction]="'ease-out'"
       >
-        <h1
-          class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+      </carousel>
+    </div>
+    <div
+      class="lg:flex-grow md:w-1/2 lg:pl-24 rounded-md flex flex-col md:items-start md:text-left ml-3 items-center py-10 px-5"
+    >
+      <div class="w-full text-left sm:text-8xl text-5xl font-black text-white">
+        <p class="">India's</p>
+        <p class="">Fastest Book</p>
+      </div>
+      <div class="sm:text-8xl text-5xl w-full font-black text-right mb-5">
+        <p class="text-right">SPORTS</p>
+        <p class="text-right">PLATFORM</p>
+      </div>
+      <div class="flex justify-center">
+        <a
+          href="{{whatsappUrl}}"
         >
-          Gajanand Book
-        </h1>
-        <p class="mb-8 leading-relaxed">
-          To Start with us get your ID using WhatsApp
-        </p>
-        <div class="flex justify-center">
           <button
-            class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none"
+            class="bg-gray-100 inline-flex py-3 px-5 text-green-500 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none"
           >
-          <a href="https://api.whatsapp.com/send?phone=+917733004459&text=Hello.">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -39,12 +47,29 @@
               />
             </svg>
             <span class="ml-4 flex items-start flex-col leading-none">
-              <span class="text-xs text-gray-600 mb-1">To Get ID</span>
+              <span class="text-xs text-gray-600 mb-1"><strong> Click Here</strong> &nbsp; To Get ID</span>
               <span class="title-font font-medium">Sent Message on WA</span>
             </span>
-          </a>
           </button>
-        </div>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<div
+  class="text-center w-full mb-10 bg-orange-400 text-white"
+  style="padding: 40px"
+>
+  <p class="sm:text-6xl text-3xl font-medium title-font mb-2">
+    Withdraw in Just
+    <span class="px-5 py-1 rounded-full bg-white text-orange-400">3</span>
+    Minutes
+  </p>
+  
+  <div class="lg:w-2/3 mx-auto leading-relaxed justify-center">
+    <div class="w-full justify-center mb-2">
+      <img src="{{verifyImg}}" style="width: 50px; display: inline-block;" />
+    </div>
+    <div class="w-full text-blue-900">Withdrawal Guaranteed</div>
+  </div>
+</div>

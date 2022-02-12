@@ -1,13 +1,28 @@
-<section class="text-gray-600 body-font">
+<div
+  class="text-center w-full bg-orange-400 text-white"
+  style="padding: 40px"
+>
+  <div class="sm:text-8xl text-5xl w-full font-black mb-5">
+    Demo Accounts
+  </div>
+  <p class="lg:w-2/3 w-full text-center" >
+    You can see some demo account links with credentials and other details to go
+    with it click one of them.
+  </p>
+</div>
+<section class="text-gray-600 body-font bg-gradient-to-b from-orange-400 ">
   <div class="container px-5 mx-auto">
     <div class="flex flex-wrap -mx-1 overflow-hidden">
       <div
         *ngFor="let item of demoAccountData"
         class="my-1 px-1 w-1/2 overflow-hidden lg:w-1/4 xl:w-1/4 text-center"
       >
-        <div class="text-center sm:pr-8 sm:py-8 transform transition duration-1000 hover:scale-110">
+        <div
+          class="text-center sm:pr-8 sm:py-8 transform transition duration-1000 hover:scale-110"
+          (click)="onDemoClick(item)"
+        >
           <div
-            class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-indigo-500 text-white"
+            class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-orange-500 text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -26,10 +41,11 @@
             <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">
               {{ item.name }}
             </h2>
-            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+            <div class="w-12 h-1 bg-orange-500 rounded mt-2 mb-4"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+

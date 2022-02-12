@@ -1,0 +1,12 @@
+<mat-dialog-content class="mat-typography">
+    <h3 style="font-weight: 700;">{{demoDetails?.name}}</h3>  
+    <p><strong>ID: </strong>{{demoDetails?.id}}</p>  
+    <p><strong>Password: </strong>{{demoDetails?.pass}}</p>  
+    <p><strong>Min Id: </strong>{{demoDetails?.minID}}</p>  
+    <p><strong>Min Bet: </strong>{{demoDetails?.minBet}}</p>  
+    <p><strong>Fancy: </strong>{{demoDetails?.fancy}}</p>  
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button (click)="goToLink(demoDetails?.link)" class="bg-orange-500 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none" [mat-dialog-close]="true" cdkFocusInitial>Try Demo</button>
+  </mat-dialog-actions>

@@ -1,32 +1,18 @@
-<footer class="text-gray-600 body-font bg-grey-800">
+<footer class="text-gray-800 sm:text-4xl body-font bg-yellow-400">
   <div
-    class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+    class="container px-5 py-1 mx-auto flex items-center sm:flex-row flex-col"
   >
     <a
-      class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+      class="flex title-font font-medium items-center md:justify-start justify-center logo-a-icon"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-        ></path>
-      </svg>
-      <span class="ml-3 text-xl">Logo</span>
+      <img src="{{logoImg}}" style="position: relative" />
     </a>
     <p
-      class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+      class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:py-2 sm:mt-0 mt-4"
     >
       © {{ footerYear }} Gajanand Book
     </p>
-   <!--  <span>
+    <!--  <span>
         <a class="text-gray-500">
             <svg
               fill="currentColor"
@@ -44,10 +30,11 @@
     <span
       class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
     >
-    <span class="sm:ml-auto sm:mt-0 mt-2 mr-10 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
-
-        Helpline | +91 7733004495 
-    </span>
+      <a href="{{whatsappUrl}}"
+        class="sm:ml-auto sm:mt-0 mt-2 mr-10 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm"
+      >
+        Helpline | +91 7733004495
+      </a>
       <a class="text-gray-500">
         <svg
           fill="currentColor"
@@ -62,7 +49,7 @@
           ></path>
         </svg>
       </a>
-      <a class="ml-3 text-gray-500">
+      <a class="ml-3 text-gray-500" href="{{INSTAGRAM_URL}}">
         <svg
           fill="none"
           stroke="currentColor"
@@ -76,6 +63,18 @@
           <path
             d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
           ></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500" href="{{TELEGRAM_URL}}">
+        <svg
+          fill="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="w-5 h-5"
+          viewBox="0 0 24 24"
+        >
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
         </svg>
       </a>
     </span>

@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
+import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StaticsComponent } from './statics/statics.component';
+import { DemoAccountsComponent } from './demo-accounts/demo-accounts.component';
+import { DemoDetailsDialogComponent } from './demo-details-dialog/demo-details-dialog.component';
+import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { MidContentOneComponent } from './mid-content-one/mid-content-one.component';
-import { DemoAccountsComponent } from './demo-accounts/demo-accounts.component';
-import { FooterComponent } from './footer/footer.component';
+import { StaticsComponent } from './statics/statics.component';
+import { TelegramDialogComponent } from './telegram-dialog/telegram-dialog.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +23,17 @@ import { FooterComponent } from './footer/footer.component';
     LandingComponent,
     MidContentOneComponent,
     DemoAccountsComponent,
-    FooterComponent
+    FooterComponent,
+    DemoDetailsDialogComponent,
+    TelegramDialogComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    IvyCarouselModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
