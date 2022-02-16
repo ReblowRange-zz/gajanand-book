@@ -2,13 +2,26 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Monoton&family=Nunito:wght@300&family=Sora:wght@300&display=swap");
 
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
 
+/* Available Fonts 
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Monoton', cursive;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Sora', sans-serif;
+*/
+
+
 .logo-a-icon {
-    width: 7rem;
+  width: 7rem;
 }
-html, body { height: 100%; }
-// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  // font-family: 'Sora', sans-serif;
+  font-family: "Nunito", sans-serif;
+  height: 100%;
+}

@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { CarouselComponent, Image } from 'angular-responsive-carousel';
-import { ID_WHATSAPP } from '../constant-data';
+import { ID_WHATSAPP, TELEGRAM_URL } from '../constant-data';
 
 @Component({
   selector: 'app-landing',
@@ -10,15 +10,7 @@ import { ID_WHATSAPP } from '../constant-data';
 export class LandingComponent implements OnInit, AfterViewInit {
   
   public whatsappUrl = `https://api.whatsapp.com/send?phone=+91${ID_WHATSAPP}&text=Hello\n I want Online ID`;
- /*  public images: Image[] = [
-    { path: 'assets/landing-img/poker.png' },
-    { path: 'assets/landing-img/football.png' },
-    { path: 'assets/landing-img/lucky7.png' },
-    { path: 'assets/landing-img/roulette.png' },
-    { path: 'assets/landing-img/tennis.png' },
-    { path: 'assets/landing-img/cricket.png' },
-    { path: 'assets/landing-img/teenpatti.png' },
-  ]; */
+  public TELEGRAM_URL = TELEGRAM_URL;
 
   public images: Image[] = [
     {path: 'assets/40 poster.jpg'},

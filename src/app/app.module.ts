@@ -13,7 +13,6 @@ import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { MidContentOneComponent } from './mid-content-one/mid-content-one.component';
 import { StaticsComponent } from './statics/statics.component';
-import { TelegramDialogComponent } from './telegram-dialog/telegram-dialog.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { TelegramDialogComponent } from './telegram-dialog/telegram-dialog.compo
     DemoAccountsComponent,
     FooterComponent,
     DemoDetailsDialogComponent,
-    TelegramDialogComponent,
 
   ],
   imports: [

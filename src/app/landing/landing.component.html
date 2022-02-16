@@ -1,10 +1,10 @@
 <section class="text-gray-600 body-font bg-yellow-400">
   <div
-    class="container mx-auto flex px-5 py-14 md:flex-row flex-col items-center"
+    class="container mx-auto flex px-5 pb-14 md:flex-row flex-col items-center"
   >
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
       <carousel
-        style="z-index: inherit;"
+        style="z-index: inherit"
         class="carosal-css"
         [images]="images"
         [cellsToShow]="1"
@@ -17,20 +17,22 @@
       </carousel>
     </div>
     <div
-      class="lg:flex-grow md:w-1/2 lg:pl-24 rounded-md flex flex-col md:items-start md:text-left ml-3 items-center py-10 px-5"
+      class="lg:flex-grow md:w-1/2 lg:pl-24 rounded-md flex flex-col md:items-start md:text-left items-center pb-10 px-5"
     >
-      <div class="w-full text-left sm:text-8xl text-5xl font-black text-white">
+      <div
+        class="w-full text-left sm:text-8xl text-5xl font-black mb-9 sm:md-16 text-white landing-titile"
+      >
         <p class="">India's</p>
         <p class="">Fastest Book</p>
       </div>
-      <div class="sm:text-8xl text-5xl w-full font-black text-right mb-5">
+      <div
+        class="sm:text-8xl text-5xl w-full font-black text-right mb-9 sm:md-16 landing-titile"
+      >
         <p class="text-right">SPORTS</p>
         <p class="text-right">PLATFORM</p>
       </div>
       <div class="flex justify-center">
-        <a
-          href="{{whatsappUrl}}"
-        >
+        <a href="{{ whatsappUrl }}">
           <button
             class="bg-gray-100 inline-flex py-3 px-5 text-green-500 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none"
           >
@@ -47,8 +49,12 @@
               />
             </svg>
             <span class="ml-4 flex items-start flex-col leading-none">
-              <span class="text-xs text-gray-600 mb-1"><strong> Click Here</strong> &nbsp; To Get ID</span>
-              <span class="title-font font-medium">Sent Message on WA</span>
+              <span class="text-xs text-gray-600 mb-1"
+                ><strong> Click Here</strong> &nbsp; To Get ID</span
+              >
+              <span class="title-font font-medium"
+                ><strong>Sent Message on WA</strong></span
+              >
             </span>
           </button>
         </a>
@@ -56,6 +62,35 @@
     </div>
   </div>
 </section>
+<div
+  class="text-center w-full telegram-text"
+  style="padding: 40px 0px; color: #229ed9"
+>
+  <a
+    href="{{ TELEGRAM_URL }}"
+    class="telegram-anchor"
+  >
+    <svg
+    style="display: inline-block; transform: scale(2.5); margin: 0px 31px"
+      fill="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      class="w-5 h-5"
+      viewBox="0 0 24 24"
+    >
+      <path
+        style="transform: scale(1.5)"
+        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+      />
+    </svg>
+    <span> Join Our Telegram Group </span>
+    <svg style="display: inline-block; margin: 0px 15px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+      <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+    </svg>
+  </a>
+</div>
 <div
   class="text-center w-full mb-10 bg-orange-400 text-white"
   style="padding: 40px"
@@ -65,11 +100,13 @@
     <span class="px-5 py-1 rounded-full bg-white text-orange-400">3</span>
     Minutes
   </p>
-  
+
   <div class="lg:w-2/3 mx-auto leading-relaxed justify-center">
     <div class="w-full justify-center mb-2">
-      <img src="{{verifyImg}}" style="width: 50px; display: inline-block;" />
+      <img src="{{ verifyImg }}" style="width: 50px; display: inline-block" />
     </div>
-    <div class="w-full text-blue-900">Withdrawal Guaranteed</div>
+    <div class="w-full text-blue-900 sm:text-4xl text-1xl">
+      Withdrawal Guaranteed
+    </div>
   </div>
 </div>
