@@ -13,6 +13,8 @@ import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
 import { MidContentOneComponent } from './mid-content-one/mid-content-one.component';
 import { StaticsComponent } from './statics/statics.component';
+import { MarkWordsComponent } from './mark-words/mark-words.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -24,14 +26,15 @@ import { StaticsComponent } from './statics/statics.component';
     DemoAccountsComponent,
     FooterComponent,
     DemoDetailsDialogComponent,
-
+    MarkWordsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     IvyCarouselModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
